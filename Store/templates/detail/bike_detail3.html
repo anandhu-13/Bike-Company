@@ -1,0 +1,27 @@
+
+
+
+
+  
+{%block main_block%}
+
+<section class="product_detail_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Product Image -->
+                <img src="{{data.image.url}}" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <!-- Product Details -->
+                <h2>{{data.title}}</h2>
+                <p>Price:{{data.price}}</p>
+                <p>Description: {{data.description}}</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}
+

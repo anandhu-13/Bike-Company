@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+
+{%block main_block%}
+<section class="section product-detail">
+  <div class="details container">
+    <div class="left image-container">
+      
+      <div class="main">
+        <img src="{{data.image.url}}" id="zoom" alt="" width="700px" height="500px"/>
+      </div>
+    </div>
+    <div class="right">
+      <span></span>
+      <h1>{{data.title}}</h1>
+      
+      <div class="price" style="font-size: xx-large; font-weight: bolder;color: cadetblue;">Price: Rs {{data.price}} Lakh</div>
+
+      <h1>Model: {{data.Model_year}}</h1>
+
+      <h3>Product Detail</h3>
+      <p>
+       {{data.description}}
+      </p>
+      <button>
+        <a href="{%url 'checkout' data.id%}" class="checkout btn ">Book Now</a>
+      </button>
+
+      
+
+    </div>
+  </div>
+</section>
+{%endblock%}
