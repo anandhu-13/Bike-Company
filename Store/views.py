@@ -14,8 +14,8 @@ import razorpay
 
 
 
-KEY_ID="rzp_test_tGyW98HIsAU7s4"
-KEY_SECRET="eqFjK1cogbMNolEnX0dOZiqQ"
+KEY_ID=""
+KEY_SECRET=""
 
 
 
